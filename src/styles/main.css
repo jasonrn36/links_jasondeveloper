@@ -74,6 +74,14 @@ h3 {
     text-shadow: 1px 1px 2px #e0e0e0;
 }
 
+.slogan {
+    text-align: center;
+    font-size: 1.0em;
+    color: #6b7280;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
 /* Container dos botões */
 .produtos {
     display: flex;
