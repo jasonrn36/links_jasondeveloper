@@ -105,6 +105,8 @@ h3 {
 }
 
 .offer {
+    margin-top: 10px;
+    padding-bottom: 10px;
     z-index: 3;
     width: 100%;
     align-items: center;
@@ -112,10 +114,8 @@ h3 {
     background-color: transparent;
     font-size: 18px;
     font-weight: bold;
-    padding-bottom: 10px;
     text-align: justify;
     line-height: 1.5;
-    padding-bottom: 8px;
 
 }
 
