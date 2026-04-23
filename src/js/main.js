@@ -1,3 +1,5 @@
+    document.getElementById("year").textContent = new Date().getFullYear();
+
 function filtrarProdutos() {
     let input = document.getElementById('inputBusca').value.toLowerCase();
     let cards = document.getElementsByClassName('produto-card');
@@ -10,4 +12,6 @@ function filtrarProdutos() {
             cards[i].style.display = "none";
         }
     }
+
+
 }
