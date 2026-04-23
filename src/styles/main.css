@@ -1,145 +1,163 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+* { box-sizing: border-box; 
+    font-family: sans-serif; 
+    margin: 0; 
+    padding: 0; }
 
-body {
-    background: #f5f5f7;
-}
-
-/* container IDIOMA */
-.idioma {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 100;
-}
-
-/* Container principal */
-.container {
-    display: flex;         
-    flex-direction: column;   /* empilha os elementos */
-    justify-content: center;  /* centraliza verticalmente */
-    align-items: center;      /* centraliza horizontalmente */
-    min-height: 100vh;        /* ocupa toda a altura da tela */
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 15px;
-}
-
-
-.profile-image {
-    align-items: center;
-    margin-top: 24px;
-}
-
-.profile-image img {
-    display: block;
-    margin: 40px auto 10px auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 22px; /* Estilo "Squircle" do iOS */
-    border: 1px solid #d2d2d7;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.profile-image img:hover {
-    transform: scale(1.05); /* Feedback visual sutil ao passar o mouse */
-}
-
-.imagem-perfil {
-    border-radius: 150%;
-    clip-path: circle(150%);
-}
-
-.link--image {
+a {
     text-decoration: none;
-    color: #111827;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #e0e0e0;
-}
-/* Título */
-h3 {
-    text-align: center;
-    font-size: 1.6em;
-    text-decoration: none;
-    color:#111827;
-    margin-bottom: 30px;
-    font-family: 'Arial', sans-serif;
-    text-shadow: 1px 1px 2px #e0e0e0;
 }
 
-.slogan {
-    text-align: center;
-    font-size: 1.0em;
-    color: #6b7280;
-    margin-bottom: 30px;
-    font-family: 'Arial', sans-serif;
-}
+body { 
+    background-color: #f4f4f4; 
+    padding-top: 70px; }
 
-/* Container dos botões */
-.produtos {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header {
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    background: #ee4d2d; 
     padding: 15px;
-}
-
-.imagem-produto {
-    width: 100%;
-    display: block;
-    height: auto;
-}
-
-.offer {
-    margin-top: 10px;
-    padding-bottom: 10px;
-    z-index: 3;
-    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     align-items: center;
-    color: #111827;
-    background-color: transparent;
+
+}
+
+.logotipo {
+    position: relative;
+    top: -8px;
+    left: 0;
+    height: 70px;
+    border-radius: 20px;
+}
+
+#inputBusca {
+    width: 100%; 
+    padding: 8px;
+    border-radius: 5px;
+    border: none; 
+    outline: none; 
+    font-size: 16px;
+}
+
+
+.vitrine {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 10px; 
+    padding: 10px;
+    margin-top: 80px;
+}
+
+.produto-card {
+    background: white; 
+    border-radius: 8px;
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.produto-card img { 
+    width: 100%; 
+    height: 250px; /* Altura fixa para todas as imagens serem iguais */
+    object-fit: contain; /* Faz a imagem caber no espaço sem cortar nem distorcer */
+    background-color: #fff; /* Fundo branco caso a imagem seja menor que o espaço */
+    padding: 5px; /* Espaço para a imagem não encostar nas bordas do card */
+}
+
+    .info {
+        padding: 10px; 
+        text-align: center; 
+        display: flex;
+        flex-direction: column; /* Organiza os itens em coluna */
+        justify-content: space-between; /* Empurra o botão para o final */
+        min-height: 100px; /* Garante um tamanho mínimo para o card não achatar */
+    }
+
+
+.nome { 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita o texto a 2 linhas (estilo Shopee) */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px; 
+    color: #333; 
+    height: 36px; /* Altura fixa para 2 linhas de texto */
+    margin-bottom: 10px; /* Espaço para o preço */
+    padding-bottom: 0 !important;
+}
+
+.preco { 
+    font-weight: bold; 
+    color: #ee4d2d; 
     font-size: 18px;
-    font-weight: bold;
-    text-align: justify;
-    line-height: 1.5;
-
+    margin-top: auto; /* Joga o preço e o botão para baixo */
+    margin-bottom: 8px;
 }
 
-.link-button {
-    text-decoration: none;
-    font-weight: normal;
-    font-style: normal;
-    color: #111827;
+.btn-comprar {
+    display: block; 
+    background: #ee4d2d; 
+    color: white;
+    text-decoration: none; 
+    padding: 8px; 
+    border-radius: 4px; 
+    font-size: 14px;
 }
 
-/* Rodapé */
-.footer {
-    margin-top: 30px;
-    margin-bottom: -10px;
-    padding: 15px 0;
-    width: 100%;
-    text-align: center;
-    background-color: #f1f1f1;
-    border-top: 1px solid #ccc;
-        border-radius: 15px; 
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background: #ee4d2d; 
+    color: white;
 }
 
-.footer a {
-    color: #000000;
-    font-size: 1.0em;
+/* --- AJUSTES PARA TELAS MAIORES (Desktop) --- */
+@media (min-width: 768px) {
+    header {
+        display: flex;       /* Ativa o modo flexbox */
+        flex-direction: row; /* Coloca um ao lado do outro */
+        justify-content: center; /* Centraliza o grupo na horizontal */
+        align-items: center;    /* CENTRALIZA VERTICALMENTE (o que você precisa) */
+        padding: 0 20px;
+        height: 80px;        /* Altura fixa para controle total */
+    }
 
+
+    .logotipo {
+        height: 75px;        /* Ajuste conforme o tamanho da sua imagem */
+        margin-right: 15px;
+        top: 0;             /* Zera o posicionamento que estava no mobile */
+        position: static;    /* Remove o modo de posicionamento antigo */
+        border-radius: 10px;
+    }
+
+    #inputBusca {
+        font-size: 14px;
+        max-width: 500px;
+        height: 40px;        /* Define uma altura fixa para a busca */
+        margin: 0;           /* Remove margens que possam deslocar o campo */
+    }
+
+    .vitrine {
+        grid-template-columns: repeat(4, 1fr); /* 4 Colunas no PC */
+        max-width: 1100px;
+        margin: 16px auto 20px auto; /* Centraliza a vitrine */
+    }
+
+    .nome {
+        font-size: 1em;
+        padding-bottom: 0; /* Remove aquele padding largo do mobile */
+    }
+
+    .preco{
+        font-size: 1em;
+    }
+
+    .btn-comprar {
+        font-size: 1em;
+        padding: 6px;
+    }
 }

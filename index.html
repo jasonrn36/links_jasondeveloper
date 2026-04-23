@@ -1,171 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Nascimento | Curated Tech</title>
-    <link rel="stylesheet" href="/src/styles/main.css">
+    <title>Minha Vitrine de Promoções</title>
+    <link rel="stylesheet" href="src/styles/main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="profile-image">
-            <a href="#">
-                <img class="imagem-produto" src="./src/img/Json (2).png" alt="JasonDeveloper Profile">
+
+    <header>
+        <a  href="https://links-jasondeveloper.vercel.app/">
+            <img class="logotipo" src="./src/img/Json (2).png" alt="Jason Developer">
+        </a>
+        <input type="text" id="inputBusca" onkeyup="filtrarProdutos()" placeholder="🔍 Buscar produtos...">
+    </header>
+
+    <main class="vitrine" id="listaProdutos">
+
+        <!-- Card de Caixa JBL -->
+        <div class="produto-card">
+            <a href="https://tidd.ly/4c1Tfrn" target="_blank" rel="sponsored">
+            <img src="./src/img/JBL caixa 320.jpg" alt="JBL PartyBox Stage 320">
             </a>
-
-            <h3>JasonDeveloper</h3>
-            <p class="slogan">Software Developer | Tech Curator</p>
+            <div class="info">
+                <p class="nome">JBL PartyBox Stage 320 Som Pro de 240W, até 18h de bateria e proteção IPX4 contra respingos. A melhor caixa de som portátil para festas.
+                </p>
+                <a class="btn-comprar" href="https://tidd.ly/4c1Tfrn" target="_blank" rel="sponsored">Ver Oferta</a>
+            </div>
         </div>
 
-        <div class="produtos">
-
-            <!-- Item: Motolora MotoG60>
-                </a> -->
-            <div class="item">
-                <a class="imagem-produto" href="https://tidd.ly/4cgkRdS" target="_blank" rel="noopener sponsored">
-                    <img class="imagem-produto" src="./src/img/Motolora MotoG60 .png" alt="Moto G60">
-                </a>
-                <span class="offer">
-                    <a href="https://tidd.ly/4cgkRdS" target="_blank" rel="noopener sponsored" class="link-button">
-                    <strong>Smartphone Motorola Moto G06 128GB 12GB de RAM Laranja</strong><br>
-                    A Maior Tela da Categoria
-                    Veja além com a maior tela
-                    Tela HD+ de 6,9" | Modo de brilho máximo.
-                    Tecnologia Smart Water Touch
-                    Responde ao toque mesmo com a tela molhada.
-                    </a>
-                </span>
+        <!-- Card de Liquidificador -->
+        <div class="produto-card">
+            <a href="https://tidd.ly/4vl7sso" target="_blank" rel="sponsored">
+            <img src="./src/img/Liquidificador_ninja.png" alt="Liquidificador Ninja">
+            </a>
+            <div class="info">
+                <p class="nome">Liquidificador Ninja Kitchen System 3 em 1 110V Com o Kitchen System® você cria smoothies, processa alimentos e bate massas com o sistema 3 em 1 que toda cozinha precisa.
+                </p>
+                <a class="btn-comprar" href="https://tidd.ly/4vl7sso" target="_blank" rel="sponsored">Ver Oferta</a>
             </div>
-
-            <!-- Item: TEclado EXBOM mecanico>
-                </a> -->
-            <div class="item">
-                <a class="imagem-produto" href="https://s.shopee.com.br/5AohZVE1HB " target="_blank" rel="noopener sponsored">
-                    <img class="imagem-produto" src="./src/img/Teclado Mecânico EXBOM Gamer RGB LED USB Anti Ghosting Alta Perform.jpg" alt="Teclado Mecânico EXBOM">
-                </a>
-                <span class="offer">
-                    <a href="https://s.shopee.com.br/5AohZVE1HB " target="_blank" rel="noopener sponsored" class="link-button">
-                    <strong>Teclado Mecânico EXBOM Gamer RGB LED USB Anti Ghosting Alta Performance</strong><br>
-                    Teclado Mecânico Gamer RGB LED USB Anti Ghosting Alta Performance Para PC Gamer Computador Teclado Gamer Iluminado
-                    </a>
-                </span>
-            </div>
-
-            <!-- Item: TEclado Aula mecanico>
-                </a> -->
-            <div class="item">
-                <a class="imagem-produto" href="https://s.shopee.com.br/2BB641PiR3 " target="_blank" rel="noopener sponsored">
-                    <img class="imagem-produto" src="./src/img/Teclado Aula 01.jpg" alt="Teclado Mecânico Aula">
-                </a>
-                <span class="offer">
-                    <a href="https://s.shopee.com.br/2BB641PiR3 " target="_blank" rel="noopener sponsored" class="link-button">
-                    <strong>Teclado Gamer Mecânico F3018 Anti-Ghosting Teclado Ultra-Fino Com Fio - Aula</strong><br>
-                    Teclado Mecânico Gamer RGB LED USB Anti Ghosting Trimmer regulador vulome ou personalizavel para PC Gamer
-                    </a>
-                </span>
-            </div>
-
-            <!-- Item: ASUS VivoBook -->
-            <div class="item">
-                <a href="https://tidd.ly/47DbWjU" target="_blank" rel="noopener sponsored">
-                    <img class="imagem-produto" src="./src/img/AsusVivoBook 002.jpg" alt="ASUS VivoBook Laptop">
-                </a>
-
-                <span class="offer">
-                    <a href="https://tidd.ly/47DbWjU" target="_blank" rel="noopener sponsored" class="link-button">
-                        <strong>ASUS VivoBook Go 15</strong><br>
-                        AMD Ryzen 5 7520U, 8GB de RAM, 512GB de SSD. 
-                        Tela Full HD de 15.6". Perfeito para produtividade e desenvolvimento.
-                    </a>
-                </span>
-            </div>
-
-            <!-- Item: ORGANIZADOR PRATILEIRA NICHO 90x90CM -->
-            <div class="item">
-                <a href="https://amzn.to/4tuWfUX" target="_blank" rel="noopener sponsored">
-                    <img class="imagem-produto" src="./src/img/Organizador Prateleira 90x90x.jpg" alt="Organizador Prateleira Nicho 90x90CM">
-                </a>
-
-                <span class="offer">
-                    <a href="https://amzn.to/4tuWfUX" target="_blank" rel="noopener sponsored" class="link-button">
-                        <strong>
-                        -20% de Desconto - Organizador prateleira nicho 90x90CM de sala e escritório porta livros quarto multifuncional
-                        </strong><br>
-                        Organizador prateleira nicho 90x90CM de sala e escritório porta livros quarto multifuncional </br>
-                        - Prateleira de parede para livros, decoração, plantas, fotos, brinquedos, utensílios domésticos e muito mais.
-                    </a>
-                </span>
-            </div>
-
-            <!-- Item: Liquidificador Ninja -->
-            <div class="item">
-                <a class="imagem-produto" href="https://tidd.ly/4vl7sso" target="_blank" rel="noopener sponsored">
-                    <img class="imagem-produto" src="./src/img/Liquidificador_ninja.png" alt="Liquidificador Ninja">
-                </a>
-                <span class="offer">
-                    <a href="https://tidd.ly/4vl7sso" target="_blank" rel="noopener sponsored" class="link-button">
-                    <strong>Liquidificador Ninja Kitchen System 3 em 1 110V</strong><br>
-                    Com o Kitchen System®
-                        você cria smoothies, processa
-                        alimentos e bate massas com
-                        o sistema 3 em 1 que toda
-                        cozinha precisa.
-                    </a>
-                </span>
-            </div>
-
-            <!-- Item: Atomic Silver Black -->
-            <div class="item">
-                <a class="imagem-produto" href="https://tidd.ly/4eafK02" target="_blank" rel="noopener sponsored">
-                    <img class="imagem-produto" src="./src/img/Atomic Silver Black.png" alt="Atomic Silver Black Watch">
-                </a>
-                <span class="offer">
-                    <a href="https://tidd.ly/4eafK02" target="_blank" rel="noopener sponsored" class="link-button">
-                    <strong>Relógio Atomic Silver Black</strong><br>
-                    Design moderno e elegante, combinando estilo e funcionalidade de ponta. 
-                    Possui caixa em aço inoxidável, moldura em aço escovado e uma pulseira cinza confortável. 
-                    Mostrador estilo piloto minimalista com exibição de data. Resistente à água para performance diária. 
-                    Eleve seu estilo a um novo nível!
-                    </a>
-                </span>
-            </div>
-
-            <!-- Item: Atomic Black Pure -->
-            <div class="item">
-                <a class="imagem-produto" href="https://tidd.ly/420aq85" target="_blank" rel="noopener sponsored">
-                    <img class="imagem-produto" src="./src/img/Atomic Black Pure.png" alt="Atomic Black Pure Watch">
-                </a>
-                <span class="offer">
-                    <a href="https://tidd.ly/420aq85" target="_blank" rel="noopener sponsored" class="link-button">
-                        <strong>Relógio Atomic Black Pure</strong><br>
-                        Acabamento sofisticado em preto piano com estrutura premium em aço inoxidável. 
-                        Projetado para durabilidade e conforto com uma pulseira preta marcante. 
-                        Estética estilo piloto, perfeita para uso profissional ou casual.
-                    </a>
-                </span>
-            </div>
-
-            <!-- Item: JBL Stage 320 -->
-            <div class="item">
-                <img class="imagem-produto" src="./src/img/JBL caixa 320.jpg" alt="JBL PartyBox Stage 320">
-                <span class="offer">
-                    <a href="https://tidd.ly/4c1Tfrn" target="_blank" rel="noopener sponsored" class="link-button">
-                        <strong>JBL PartyBox Stage 320</strong><br>
-                        Som Pro de 240W, até 18h de bateria e proteção IPX4 contra respingos. 
-                        A melhor caixa de som portátil para festas.
-                    </a>
-                </span>
-            </div>
-
-
-
         </div>
-    </div>
-    <div class="footer">
-        <a href="https://www.linkedin.com/in/jason-developer3000" target="_blank" rel="noopener sponsored" >&copy; 2024 JasonDeveloper. Todos os direitos reservados.</a>
-    </div>
 
-    <script src="https://www.dwin2.com/pub.2815846.min.js"></script>
+        <!-- Card de Organizadora -->
+        <div class="produto-card">
+            <a href="https://amzn.to/4tuWfUX" target="_blank" rel="sponsored">
+            <img src="./src/img/Organizador Prateleira 90x90x.jpg" alt="ORGANIZADOR PRATILEIRA NICHO para escritório">
+            </a>
+            <div class="info">
+                <p class="nome">Organizador prateleira nicho 90x90CM de sala e escritório porta livros quarto multifuncional
+- Prateleira de parede para livros, decoração, plantas, fotos, brinquedos, utensílios domésticos e muito mais.
+                </p>
+                <a class="btn-comprar" href="https://amzn.to/4tuWfUX" target="_blank" rel="sponsored">Ver Oferta</a>
+            </div>
+        </div>
 
+        <!-- Card de Motorola -->
+        <div class="produto-card">
+            <a href="https://tidd.ly/4cgkRdS" target="_blank" rel="noopener noreferrer">
+                <img src="./src/img/Motolora MotoG60 .png" alt="Produto">
+            </a>
+            <div class="info">
+                <p class="nome">Smartphone Motorola Moto G06 128GB 12GB de RAM Laranja
+                </p>
+                <a  class="btn-comprar" href="https://tidd.ly/4cgkRdS" target="_blank" rel="noopener noreferrer">Ver Oferta</a>
+            </div>
+        </div>
+
+        <!-- Card de Teclado EXBOM -->
+        <div class="produto-card">
+            <a href="https://s.shopee.com.br/5AohZVE1HB" target="_blank" rel="noopener noreferrer">
+                <img src="./src/img/Teclado Mecânico EXBOM Gamer RGB LED USB Anti Ghosting Alta Perform.jpg" alt="Teclado EXBOM">
+            </a>
+            <div class="info">
+                <p class="nome">Teclado Mecânico EXBOM Gamer RGB LED USB Anti Ghosting Alta Performance
+                </p>
+                <a class="btn-comprar" href="https://s.shopee.com.br/5AohZVE1HB" target="_blank" rel="noopener noreferrer">Ver Oferta</a>
+            </div>
+        </div>
+
+        <!-- Card de Teclado Aula -->
+        <div class="produto-card">
+            <a href="https://s.shopee.com.br/2BB641PiR3" target="_blank" rel="noopener noreferrer">
+            <img src="./src/img/Teclado Aula 01.jpg" alt="Teclado Aula">
+            </a>
+            <div class="info">
+                <p class="nome">Teclado Gamer Mecânico F3018 Anti-Ghosting Teclado Ultra-Fino Com Fio
+                </p>
+                <a class="btn-comprar" href="https://s.shopee.com.br/2BB641PiR3 " target="_blank" rel="noopener noreferrer">Ver Oferta</a>
+            </div>
+        </div>
+
+        <!-- Card de Asus VivoBook -->
+        <div class="produto-card">
+            <a href="https://tidd.ly/47DbWjU" target="_blank" rel="sponsored">
+            <img src="./src/img/AsusVivoBook 002.jpg" alt="Notebook ASUS VivoBook">
+            </a>
+            <div class="info">
+                <p class="nome">Notebook ASUS VivoBook Go 15 E1504FA, AMD Ryzen 5 7520U, 8GB RAM, 512GB SSD, Tela 15.6" FHD, KeepOS, Preto - E1504FA-NJ732
+                </p>
+                <a class="btn-comprar" href="https://tidd.ly/47DbWjU" target="_blank" rel="sponsored">Ver Oferta</a>
+            </div>
+        </div>
+
+        <!-- Card de Atomic Bomba Spider -->
+        <div class="produto-card">
+            <a href="https://tidd.ly/4bYMIPF" target="_blank" rel="sponsored">
+            <img src="./src/img/Atomic SpiderMan TashBomba.png" alt="Relógio Atomic Spider">
+            </a>
+            <div class="info">
+                <p class="nome">Relógio Atomic Spider Acabamento sofisticado em Red SpiderMan com estrutura premium em aço inoxidável. Projetado para durabilidade e conforto com uma pulseira preta marcante. Estética estilo piloto, perfeita para uso profissional ou casual.
+                </p>
+                <a class="btn-comprar" href="https://tidd.ly/4bYMIPF" target="_blank" rel="sponsored">Ver Oferta</a>
+            </div>
+        </div>
+
+        <!-- Card de Atomic Bomba Spider -->
+        <div class="produto-card">
+            <a href="https://tidd.ly/420aq85" target="_blank" rel="sponsored">
+            <img src="./src/img/Atomic Black Pure.png" alt="Relógio Atomic Black Pure">
+            </a>
+            <div class="info">
+                <p class="nome">Relógio Atomic Black Pure Acabamento sofisticado em preto piano com estrutura premium em aço inoxidável. Projetado para durabilidade e conforto com uma pulseira preta marcante. Estética estilo piloto, perfeita para uso profissional ou casual.
+                </p>
+                <a class="btn-comprar" href="https://tidd.ly/420aq85" target="_blank" rel="sponsored">Ver Oferta</a>
+            </div>
+        </div>
+
+        <!-- Card de Atomic Bomba Spider -->
+        <div class="produto-card">
+            <a href="https://tidd.ly/4eafK02" target="_blank" rel="sponsored">
+            <img src="./src/img/Atomic Silver Black.png" alt="Relógio Atomic Silver Black">
+            </a>
+            <div class="info">
+                <p class="nome">Relógio Atomic Silver Black Design moderno e elegante, combinando estilo e funcionalidade de ponta. Possui caixa em aço inoxidável, moldura em aço escovado e uma pulseira cinza confortável. Mostrador estilo piloto minimalista com exibição de data. Resistente à água para performance diária. Eleve seu estilo a um novo nível!
+                </p>
+                <a class="btn-comprar" href="https://tidd.ly/4eafK02" target="_blank" rel="sponsored">Ver Oferta</a>
+            </div>
+        </div>
+
+        <!-- Card de Atomic Bomba Spider -->
+        <div class="produto-card">
+            <a href="https://tidd.ly/4tAvnCj" target="_blank" rel="sponsored">
+            <img src="./src/img/Tash Bomba Atomic JasonDeveloper01.png" alt="Relógio Tash Bomba Atomic JasonDeveloper01">
+            </a>
+            <div class="info">
+                <p class="nome">Relógio Tash Bomba Atomic JasonDeveloper01 Super moderno e elegante, na cor brown com aro em cristais coroa dourada, combinando estilo e funcionalidade de ponta. Possui caixa em aço inoxidável, moldura em aço escovado e uma pulseira marrom confortável. Mostrador estilo piloto minimalista com exibição de data. Resistente à água para performance diária. Eleve seu estilo a um novo nível!
+                </p>
+                <a class="btn-comprar" href="https://tidd.ly/4tAvnCj" target="_blank" rel="sponsored">Ver Oferta</a>
+            </div>
+        </div>
+        <!-- Adicione mais cards aqui -->
+    </main>
+
+    <footer>
+            <p>© 2024 Jason Developer. Todos os direitos reservados.</p>
+    </footer>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
